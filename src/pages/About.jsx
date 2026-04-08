@@ -159,7 +159,7 @@ const About = () => {
     },
 
     heading: {
-      fontSize: "30px",
+      fontSize: "31px",
       fontWeight: "700",
       marginBottom: "16px",
       color: "#1a1a1a",
