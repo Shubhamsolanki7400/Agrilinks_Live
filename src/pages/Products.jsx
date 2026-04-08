@@ -92,8 +92,6 @@ const products = {
     id: "kabuli",
     name: "Kabuli Chickpeas",
     img: kabuli1,
-    origin: "India / Canada",
-    season: "Oct – Dec",
     desc: "Large white chickpeas widely used in hummus, salads, and curries. Premium export quality with global demand.",
     nutrients: [
       { icon: "💪", label: "Protein", val: "19g / 100g" },
@@ -108,8 +106,6 @@ const products = {
     id: "desi",
     name: "Desi Chickpeas",
     img: desicheakpea1,
-    origin: "India",
-    season: "Nov – Jan",
     desc: "Smaller dark chickpeas rich in fiber and widely used in Indian cooking and flour production.",
     nutrients: [
       { icon: "💪", label: "Protein", val: "22g / 100g" },
@@ -124,8 +120,6 @@ const products = {
     id: "eston",
     name: "Eston Lentils",
     img: estonlentils,
-    origin: "Canada",
-    season: "Aug – Oct",
     desc: "Small green lentils with firm texture and mild flavor, perfect for soups and salads.",
     nutrients: [
       { icon: "💪", label: "Protein", val: "25g / 100g" },
@@ -140,8 +134,6 @@ const products = {
     id: "laird",
     name: "Laird Lentils",
     img: lairdlentils,
-    origin: "Canada",
-    season: "Sep – Nov",
     desc: "Large green lentils that hold shape well during cooking, ideal for salads and stews.",
     nutrients: [
       { icon: "💪", label: "Protein", val: "24g / 100g" },
@@ -156,8 +148,6 @@ const products = {
     id: "redfootball",
     name: "Red Football Lentils",
     img: redfootball,
-    origin: "India / Turkey",
-    season: "Year Round",
     desc: "Bright red lentils widely used in Indian dal and Middle Eastern dishes.",
     nutrients: [
       { icon: "💪", label: "Protein", val: "26g / 100g" },
@@ -172,8 +162,6 @@ const products = {
     id: "redsplit",
     name: "Red Split Lentils",
     img: redsplit,
-    origin: "India",
-    season: "Year Round",
     desc: "Quick-cooking lentils with high nutritional value, ideal for daily cooking.",
     nutrients: [
       { icon: "💪", label: "Protein", val: "25g / 100g" },
@@ -187,8 +175,6 @@ const products = {
     id: "wholered",
     name: "Whole Red Lentils",
     img: redlentil,
-    origin: "India",
-    season: "Year Round",
     desc: "Whole red lentils with strong flavor and high protein content.",
     nutrients: [
       { icon: "💪", label: "Protein", val: "24g / 100g" },
@@ -202,8 +188,6 @@ const products = {
     id: "greenpeas",
     name: "Green Peas",
     img: greanpea,
-    origin: "India / Canada",
-    season: "Dec – Mar",
     desc: "High-quality green peas used in food processing and retail markets worldwide.",
     nutrients: [
       { icon: "💪", label: "Protein", val: "21g / 100g" },
@@ -217,8 +201,6 @@ const products = {
     id: "greensplit",
     name: "Green Split Peas",
     img: greensplit,
-    origin: "India / Canada",
-    season: "Year Round",
     desc: "Split green peas widely used in soups and processed foods.",
     nutrients: [
       { icon: "💪", label: "Protein", val: "22g / 100g" },
@@ -232,8 +214,6 @@ const products = {
     id: "yellowpeas",
     name: "Yellow Peas",
     img: yellowpea,
-    origin: "India / Canada",
-    season: "Year Round",
     desc: "Popular pulse used in food manufacturing and protein extraction.",
     nutrients: [
       { icon: "💪", label: "Protein", val: "23g / 100g" },
@@ -246,8 +226,6 @@ const products = {
     id: "yellowsplit",
     name: "Yellow Split Peas",
     img: yellowsplit,
-    origin: "India / Canada",
-    season: "Year Round",
     desc: "Split yellow peas widely used in soups, curries, and processed food products.",
     nutrients: [
       { icon: "💪", label: "Protein", val: "24g / 100g" },
@@ -532,8 +510,6 @@ const products = {
     id: "brownflax",
     name: "Brown Flax Seeds",
     img: brownflax,
-    origin: "Canada / Kazakhstan",
-    season: "Aug – Oct",
     desc: "Rich in omega-3 fatty acids and dietary fiber, brown flax seeds are widely used in health foods, baking, and nutraceutical industries.",
     nutrients: [
       { icon: "💪", label: "Protein", val: "18g / 100g" },
@@ -550,8 +526,6 @@ const products = {
     id: "brownmustard",
     name: "Brown Mustard Seeds",
     img: brownmustard,
-    origin: "India / Canada",
-    season: "Feb – Apr",
     desc: "Stronger and more pungent than yellow mustard, widely used in oil extraction and spice blends.",
     nutrients: [
       { icon: "💪", label: "Protein", val: "25g / 100g" },
@@ -568,8 +542,6 @@ const products = {
     id: "canary",
     name: "Canary Seeds",
     img: canary,
-    origin: "Canada",
-    season: "Jul – Sep",
     desc: "Light seeds used in bird feed and emerging human health foods due to high protein content.",
     nutrients: [
       { icon: "💪", label: "Protein", val: "21g / 100g" },
@@ -586,8 +558,6 @@ const products = {
     id: "canola",
     name: "Canola Seeds",
     img: canola,
-    origin: "Canada",
-    season: "Aug – Sep",
     desc: "Widely used for oil production, canola seeds are known for low saturated fat and high omega content.",
     nutrients: [
       { icon: "💪", label: "Protein", val: "20g / 100g" },
@@ -622,8 +592,6 @@ const products = {
     id: "hemp",
     name: "Hemp Seeds",
     img: hemp,
-    origin: "Canada / Europe",
-    season: "Aug – Oct",
     desc: "Highly nutritious seeds rich in protein, omega fatty acids, and essential amino acids.",
     nutrients: [
       { icon: "💪", label: "Protein", val: "31g / 100g" },
@@ -658,8 +626,6 @@ const products = {
     id: "yellowflax",
     name: "Yellow Flax Seeds",
     img: yellowflex,
-    origin: "Canada",
-    season: "Aug – Oct",
     desc: "Golden flax seeds with milder taste, preferred in bakery and premium food products.",
     nutrients: [
       { icon: "💪", label: "Protein", val: "18g / 100g" },
@@ -676,8 +642,6 @@ const products = {
     id: "yellowmustard",
     name: "Yellow Mustard Seeds",
     img: yellowmustard,
-    origin: "India / Canada",
-    season: "Mar – May",
     desc: "Mild flavored mustard seeds widely used in condiments, sauces, and oil extraction.",
     nutrients: [
       { icon: "💪", label: "Protein", val: "26g / 100g" },
@@ -1297,11 +1261,11 @@ const Products = () => {
 }
  
 const services = [
-    { number: "01", name: "Pulses & Lentils", tagline: "The daily staple, perfected.", desc: "Chana, Masoor, Moong, Urad, Toor — every pulse you need, cleaned to perfection and priced below market. Bulk and retail packs available.", highlights: ["Machine sorted", "No preservatives", "Pan-India delivery", "Min. order: 10 kg"], color: BASE.green, pale: BASE.greenPale },
-    { number: "02", name: "Dry Fruits", tagline: "Nature's finest, honestly priced.", desc: "Almonds, Cashews, Walnuts, Raisins, Pistachios — premium-grade dry fruits sourced from origin states, offered at agent-direct pricing.", highlights: ["Origin certified", "Gift packs available", "Seasonal procurement", "Min. order: 5 kg"], color: "#8B5E1A", pale: "#fdf0d8" },
-    { number: "03", name: "Seeds", tagline: "From soil to shelf, traceable.", desc: "Flaxseeds, Chia, Sesame, Sunflower, Pumpkin seeds — health-forward products with high germination rates and zero adulteration.", highlights: ["High germination", "Lab tested", "Airtight packing", "Min. order: 5 kg"], color: "#1a7a6e", pale: "#e0f5f2" },
-    { number: "04", name: "Spices & Condiments", tagline: "Pure aroma, honest origin.", desc: "Turmeric, Red Chili, Cumin, Coriander, Fenugreek — ground and whole, sourced from state-designated spice belts across India.", highlights: ["No fillers", "Origin labelled", "Retail & bulk", "Min. order: 2 kg"], color: "#c14a2f", pale: "#faeae0" },
-    { number: "05", name: "Bulk Supply", tagline: "Scale with confidence.", desc: "Custom sourcing for hotels, restaurants, supermarkets and distributors. Contract farming, custom labelling, and logistics support included.", highlights: ["Custom packaging", "Monthly contracts", "Dedicated agent", "Min. order: 100 kg"], color: "#4a3a7a", pale: "#ede0fa" },
+    { number: "01", name: "Pulses & Lentils", tagline: "The daily staple, perfected.", desc: "Chana, Masoor, Moong, Urad, Toor — every pulse you need, cleaned to perfection and priced below market. Bulk and retail packs available.", highlights: ["Machine sorted", "No preservatives", "Pan-India delivery", "Min. order: 25 MT"], color: BASE.green, pale: BASE.greenPale },
+    { number: "02", name: "Dry Fruits", tagline: "Nature's finest, honestly priced.", desc: "Almonds, Cashews, Walnuts, Raisins, Pistachios — premium-grade dry fruits sourced from origin states, offered at agent-direct pricing.", highlights: ["Origin certified", "Gift packs available", "Seasonal procurement", "Min. order: 25 MT"], color: "#8B5E1A", pale: "#fdf0d8" },
+    { number: "03", name: "Seeds", tagline: "From soil to shelf, traceable.", desc: "Flaxseeds, Chia, Sesame, Sunflower, Pumpkin seeds — health-forward products with high germination rates and zero adulteration.", highlights: ["High germination", "Lab tested", "Airtight packing", "Min. order: 25 MT"], color: "#1a7a6e", pale: "#e0f5f2" },
+    { number: "04", name: "Spices & Condiments", tagline: "Pure aroma, honest origin.", desc: "Turmeric, Red Chili, Cumin, Coriander, Fenugreek — ground and whole, sourced from state-designated spice belts across India.", highlights: ["No fillers", "Origin labelled", "Retail & bulk", "Min. order: 25 MT"], color: "#c14a2f", pale: "#faeae0" },
+    { number: "05", name: "Bulk Supply", tagline: "Scale with confidence.", desc: "Custom sourcing for hotels, restaurants, supermarkets and distributors. Contract farming, custom labelling, and logistics support included.", highlights: ["Custom packaging", "Monthly contracts", "Dedicated agent", "Min. order: 25 MT"], color: "#4a3a7a", pale: "#ede0fa" },
   ];
  
   const s = services[active];
@@ -1418,10 +1382,6 @@ const services = [
           <div className="detail-img-strip">
             <img src={selected.img} alt={selected.name} />
             <span className="detail-cat-badge">{catData.label}</span>
-            <div className="detail-meta-row">
-              <span className="detail-meta-pill">📍 {selected.origin}</span>
-              <span className="detail-meta-pill">📅 {selected.season}</span>
-            </div>
           </div>
  
           <div className="detail-body">

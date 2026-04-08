@@ -135,7 +135,7 @@ const ServiceDetail = () => {
                   </div>
                 ))}
               </div>
-              <Link to='/about'><button className="tab-cta" style={{ borderColor: `${tab.tagColor}44` }}>
+              <Link to='/services'><button className="tab-cta" style={{ borderColor: `${tab.tagColor}44` }}>
                 {tab.cta}
                 <span className="tab-cta-arrow">→</span>
               </button></Link>

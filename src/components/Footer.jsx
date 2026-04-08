@@ -106,7 +106,7 @@ const Footer = () => {
                   <i className="far fa-envelope-open"></i>
                   <div className="cta-text">
                     <h4>Mail us</h4>
-                    <span>Hello@agrilinks.in</span>
+                    <span>hello@agrilinks.in</span>
 
                     {/* --- Phone/WhatsApp Added Below Email --- */}
                     <h4 style={{ marginTop: "15px" }}>Call/WhatsApp</h4>

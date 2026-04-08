@@ -12,7 +12,7 @@ const sections = [
         <p>We may collect personal information from you when you interact with our website or use our services. This includes the following categories of data:</p>
         <ul className="pp-list">
           {[
-            ["Contact information", "such as your name, email address, phone number, and postal address."],
+            ["Contact information", "such as your name, email address, Mobile, and postal address."],
             ["Financial information", "such as payment details required for transaction processing."],
             ["Transaction information", "related to your buying or selling activities on our platform."],
             ["Voluntary information", "any additional details you choose to share with us through forms or communication."],
@@ -217,11 +217,11 @@ const Privacy = () => {
  
           <div className="sidebar-contact-box">
             <div className="scb-title">Need Help?</div>
-            <a className="scb-item" href="mailto:Hello@agrilinks.com">
+            <a className="scb-item" href="mailto:hello@agrilinks.in">
               <div className="scb-icon" style={{ background: "#edf7f0" }}>📧</div>
               <div>
                 <div className="scb-label">Email Us</div>
-                <div className="scb-val">Hello@agrilinks.com</div>
+                <div className="scb-val">hello@agrilinks.in</div>
               </div>
             </a>
             <a className="scb-item" href="tel:07314000085">
@@ -273,13 +273,13 @@ const Privacy = () => {
               <p>Our team is happy to clarify any aspect of this policy or your data rights.</p>
             </div>
             <div className="pp-contact-links">
-              <a className="pp-contact-btn" href="mailto:teamagrilinks@gmail.com">
+              <a className="pp-contact-btn" href="mailto:hello@agrilinks.in">
                 <span className="pp-contact-btn-icon">📧</span>
-                teamagrilinks@gmail.com
+                hello@agrilinks.in
               </a>
               <a className="pp-contact-btn" href="tel:07314000085">
                 <span className="pp-contact-btn-icon">📞</span>
-                0731 4000085
+               +91 9993120085
               </a>
             </div>
           </div>

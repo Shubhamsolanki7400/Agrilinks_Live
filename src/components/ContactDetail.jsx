@@ -2,7 +2,7 @@ import React from 'react';
 import '../styles/Banner.css';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-
+import { FaInstagram, FaWhatsapp, FaLinkedin } from "react-icons/fa";
 const ContactDetail = () => {
 
   const handleSubmit = async (e) => {
@@ -82,28 +82,44 @@ const ContactDetail = () => {
           </div>
 
           {/* INFO */}
-          <div className="cg-info-card">
-            <div className="cg-info-box">
-              <h4>Contact Information</h4>
+        <div className="cg-info-card">
+  <div className="cg-info-box">
+    <h4>Contact Information</h4>
+    <p>Mateshwari Agrilink Pvt Ltd</p>
 
-              <div className="cg-info-item">
-                <strong>Phone:</strong>
-                <span>+91 9993120085</span>
-              </div>
+    <div className="cg-info-item">
+      <strong>Mobile:</strong>
+      <span>+91 9993120085</span>
+    </div>
 
-              <div className="cg-info-item">
-                <strong>Email:</strong>
-                <span>hello@agrilinks.in</span>
-              </div>
+    <div className="cg-info-item">
+      <strong>Email:</strong>
+      <span>hello@agrilinks.in</span>
+    </div>
 
-              <div className="cg-info-item">
-                <strong>Address:</strong>
-                <span>
-                  204, Bansiwala Tower Above Morni Sarees, Sapna Sangeeta Road Indore, Madhya Pradesh, India 452001
-                </span>
-              </div>
-            </div>
-          </div>
+    <div className="cg-info-item">
+      <strong>Address:</strong>
+      <span>
+        204, Bansiwala Tower Above Morni Sarees, Sapna Sangeeta Road Indore, Madhya Pradesh, India 452001
+      </span>
+    </div>
+
+    {/* 🔥 SOCIAL ICONS */}
+    <div className="cg-socials">
+      <a href="https://www.instagram.com/agrilinks.in/" target="_blank" rel="noreferrer" className="cg-ig">
+        <FaInstagram />
+      </a>
+
+      <a href="https://wa.me/message/GM6ESJM6AKJQF1" target="_blank" rel="noreferrer" className="cg-wa">
+        <FaWhatsapp />
+      </a>
+
+      <a href="https://www.linkedin.com/company/109203987/admin/dashboard/" target="_blank" rel="noreferrer" className="cg-li">
+        <FaLinkedin />
+      </a>
+    </div>
+  </div>
+</div>
         </div>
 
         {/* MAP */}

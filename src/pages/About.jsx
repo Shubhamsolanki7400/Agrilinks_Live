@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
+import phoneimage from "../assets/images/mobile1.png";
 const About = () => {
   const width = useWindowWidth();
   const isMobile = width < 768;
@@ -136,6 +137,63 @@ const About = () => {
     white: "#ffffff",
   };
 
+  const styles = {
+    section: {
+      padding: "60px 20px",
+      background: "#f9f9f9",
+    },
+
+    container: {
+      maxWidth: "1100px",
+      margin: "0 auto",
+      display: "flex",
+      alignItems: "center",
+      justifyContent: "space-between",
+      gap: "40px",
+      flexWrap: "wrap", // makes it responsive
+    },
+
+    textCol: {
+      flex: 1,
+      minWidth: "280px",
+    },
+
+    heading: {
+      fontSize: "30px",
+      fontWeight: "700",
+      marginBottom: "16px",
+      color: "#1a1a1a",
+    },
+
+    desc: {
+      fontSize: "20px",
+      lineHeight: "1.7",
+      color: "#555",
+      marginBottom: "16px",
+    },
+
+    btn: {
+      padding: "10px 20px",
+      background: "#2e7d32",
+      color: "#fff",
+      border: "none",
+      borderRadius: "6px",
+      cursor: "pointer",
+    },
+
+    imageCol: {
+      flex: 1,
+      minWidth: "280px",
+      textAlign: "center",
+    },
+
+    image: {
+      width: "100%",
+      maxWidth: "350px",
+      height: "auto",
+    },
+  };
+
   return (
     <>
       <div
@@ -147,6 +205,38 @@ const About = () => {
         <div className="banner-overlay"></div>
         <h1 className="banner-title">About us</h1>
       </div>
+
+      <section style={styles.section}>
+        <div style={styles.container}>
+          {/* LEFT TEXT */}
+          <div style={styles.textCol}>
+            <h2 style={styles.heading}>About Us</h2>
+            <p style={styles.desc}>
+              Mateshwari Agrilink Pvt Ltd is India’s first platform for trading agricultural
+              commodities. “Dalal Chanchaldas and Sons was established in 1976
+              by the late Shri Chanchaldas Hablani Ji. Now the Company has been
+              led by Dheeraj Hablani, For the past 20 years. The company now
+              serves about 700 clients in India, Primarily Grain and Pulse
+              Importers, Exporters, Millers, and Traders.
+            </p>
+
+            <p style={styles.desc}>
+              Last Year Company
+              Launched New App Called “Agrilinks”.Which is India’s First
+              Platform for Trading Agriculture Commodities with Agrilinks,
+              Buyers & Sellers trade with Complete Transparency on the App,
+              Where prices Can be Easily Checked, this App offers Additional
+              Features that can be explored by Downloading it.
+            </p>
+
+          </div>
+
+          {/* RIGHT IMAGE */}
+          <div style={styles.imageCol}>
+            <img src={phoneimage} alt="About Agrilinks" style={styles.image} />
+          </div>
+        </div>
+      </section>
       <div
         style={{
           background: "#fff",

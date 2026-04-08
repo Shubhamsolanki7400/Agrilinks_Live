@@ -99,22 +99,12 @@
 /* Dark gradient overlay */
 .tab-overlay {
   position: absolute; inset: 0;
-  background: linear-gradient(
-    to right,
-    rgba(0,0,0,0.0) 0%,
-    rgba(0,0,0,0.0) 40%,
-    rgba(0,0,0,0.7) 100%
-  );
+  background: linear-gradient(to right,rgba(0,0,0,0.0) 0%,rgba(0,0,0,0.0) 40%,rgba(0,0,0,0.7) 100%);
   transition: opacity 0.4s;
 }
 .tab-overlay-bottom {
   position: absolute; inset: 0;
-  background: linear-gradient(
-    to top,
-    rgba(0,0,0,0.88) 0%,
-    rgba(0,0,0,0.3) 40%,
-    transparent 70%
-  );
+  background: linear-gradient(to top,rgba(0,0,0,0.88) 0%,rgba(0,0,0,0.3) 40%,transparent 70%);
 }
  
 /* Collapsed label (vertical text) */
@@ -506,9 +496,6 @@
 @media (max-width: 580px) {
   .testi-grid, .blog-grid { grid-template-columns: 1fr; }
 }
-
-
-//privacy and policy 
  
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
 :root{

@@ -11,49 +11,49 @@ const banners = [
     image: image1, 
     head: "Let the nature heal you",
     title: "Balanced daily nutrition",
-    subtitle: "GRAINS & NUTS Mix",
+    subtitle: "GRAINS & NUTS MIX",
     text: "Balanced nutrition in every bite.",
   },
   {
     image: image2,  // ← Use the imported variable
     head: "Wellness for your body",
     title: "Natural & protein-rich",
-    subtitle: "PURE Green Moong",
+    subtitle: "PURE GREEN MOONG",
     text: "Fresh, protein-rich and naturally nutritious.",
   },
   {
     image: image3,  // ← Use the imported variable
     head: "Nourish your skin naturally",
     title: "Wholesome & nutritious",
-    subtitle: "PREMIUM Chickpeas",
+    subtitle: "PREMIUM CHICKPEAS",
     text: "Wholesome, tasty and full of essential nutrients.",
   },
   {
     image: image4,  // ← Use the imported variable
     head: "Taste the authentic tradition",
     title: "Rich aroma & flavor",
-    subtitle: "AUTHENTIC Spices",
+    subtitle: "AUTHENTIC SPICES",
     text: "Rich aroma and flavor for every dish.",
   },
    {
   image: image5,
   head: "Experience True Indian Nutrition",
   title: "High protein source",
-  subtitle: "NATURAL Kala Chana",
+  subtitle: "NATURAL KALA CHANA",
   text: "High in protein and great for daily energy.",
 },
 {
   image: image6,
   head: "Experience True Indian Nutrition",
   title: "Rich, healthy & energizing",
-  subtitle: "PREMIUM Dry Fruits",
+  subtitle: "PREMIUM DRY FRUITS",
   text: "Naturally rich in nutrients and energy.",
 },
 {
   image: image7,
   head: "Experience True Indian Nutrition",
   title: "Pure & nutrient-dense",
-  subtitle: "NATURAL Oil Seeds",
+  subtitle: "NATURAL OIL SEEDS",
   text: "Packed with healthy fats and nutrition.",
 },
 ];
@@ -68,7 +68,7 @@ export default function BannerSlider() {
       setTimeout(() => {
         setCurrentSlide((prev) => (prev + 1) % banners.length);
         setFadeState('fade-in');
-      }, 200);
+      }, 2000);
     }, 2000);
 
     return () => clearInterval(interval);

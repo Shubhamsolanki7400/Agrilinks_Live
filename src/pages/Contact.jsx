@@ -34,7 +34,7 @@ const Contact = () => {
   const channels = [
     { icon: "📱", method: "WhatsApp", primary: "+91 9993120085", secondary: "Tap to chat instantly", action: "Chat Now", bg: "#e8f5e1", accent: "#25a244", href: "https://wa.me/message/GM6ESJM6AKJQF1" },
     { icon: "📞", method: "Call Us", primary: "+91 9993120085", secondary: "Mon–Sat, 9AM–7PM", action: "Call", bg: "#e8f0fb", accent: "#1a5cbf", href: "tel:+91 9993120085" },
-    { icon: "✉️", method: "Email", primary: "Hello@agrilinks.in", secondary: "We reply within 24 hrs", action: "Send Mail", bg: "#fdf0d8", accent: "#c17a1a", href: "mailto:Hello@agrilinks.in" },
+    { icon: "✉️", method: "Email", primary: "hello@agrilinks.in", secondary: "We reply within 24 hrs", action: "Send Mail", bg: "#fdf0d8", accent: "#c17a1a", href: "mailto:hello@agrilinks.in" },
   ];
 
   return (

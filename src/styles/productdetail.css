@@ -219,6 +219,12 @@ justify-content: center;
 @keyframes fadeSlide{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:translateY(0)}}
  
 /* ── responsive ── */
+@media(max-width:1400px){
+  .slider-panel{
+    width: 70%;
+  }
+}
+
 @media(max-width:760px){
   .prod-grid{grid-template-columns:1fr;}
   .nutrients-grid{grid-template-columns:1fr 1fr;}
@@ -233,3 +239,4 @@ justify-content: center;
   .nutrients-grid{grid-template-columns:1fr;}
   .cat-tab{padding:0.5rem 1rem;font-size:0.78rem;}
 }
+

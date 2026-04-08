@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500&family=Fraunces:ital,wght@0,300;0,700;1,300;1,700&display=swap');
+
+
 .t-m-b{
     background-color: #1E2633;
 }
@@ -118,7 +121,6 @@
 
 
 /* new abt section */
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500&family=Fraunces:ital,wght@0,300;0,700;1,300;1,700&display=swap');
 
 * {
   box-sizing: border-box;
@@ -205,6 +207,7 @@ nav {
   justify-content: center;
   position: relative;
   overflow: hidden;
+  padding: 0rem;
 }
 
 .hero-bg-shape {
@@ -219,7 +222,7 @@ nav {
 }
 
 .hero-tag {
-isplay: inline-flex;
+display: inline-flex;
     align-items: center;
     gap: 8px;
     font-size: 1.12rem;
