@@ -122,7 +122,7 @@ const Footer = () => {
             <div className="row">
               <div className="col-xl-12 col-lg-12 text-center text-lg-left">
                 <div className="copyright-text">
-                  <p>Mateshwari Agrilink Pvt, Ltd All Right Reserved.</p>
+                  <p>Mateshwari Agrilinks Pvt, Ltd All Right Reserved.</p>
                 </div>
               </div>
             </div>

@@ -211,6 +211,13 @@
   color: #0A66C2;
 }
 
+.cardhover {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.cardhover:hover {
+  transform: scale(1.08);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
 /* Background with Linear Gradient */
 
 

@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react';
 import '../styles/productdetail.css'
-import kabuli1 from '../assets/images/kabulichana.webp'
+import kabuli1 from '../assets/images/Kabulichana1.jpeg'
 import desicheakpea1 from '../assets/images/desicheakpeas.webp'
 import estonlentils from '../assets/images/eston_lentils.dba5a414.webp'
 import lairdlentils from '../assets/images/laird_lentils.088f6907.webp'
@@ -15,25 +15,22 @@ import toor from '../assets/images/toor_dal.eccbb5ac.webp'
 import moongws from '../assets/images/moong_dal_wash.7ab8592d.webp'
 import moongwh from '../assets/images/moong_dal_chilka.57a9b538.webp'
 import pinto from '../assets/images/pinto_beans.0c48f851.webp'
-import whitekidney from '../assets/images/white_kidney_beans.aa0b16c1.webp'
 import darkred from '../assets/images/dark_red_kidney_beans.dd401f43.webp'
 import yellowsplit from '../assets/images/yellow_split_peas.52a504ba.webp'
 import yellowpea from '../assets/images/yellow_peas.a757b90e.webp'
 import lightred from '../assets/images/ligth_red_kidney_beans.bc291056.webp'
-import blackbeans from '../assets/images/black_beans.89fa0b72.webp'
+import blackbeans from '../assets/images/blackbeans.avif'
 import greensplit from '../assets/images/green_split_peas.2945d846.webp'
 import cranberry from '../assets/images/cranberry_beans.78d5a03e.webp'
 import greennorth from '../assets/images/great_northern_beans.7936d128.webp'
 import navybean from '../assets/images/navy_beans.7e1a6e50.webp'
 import moongch from '../assets/images/moong_dal_chilka.57a9b538.webp'
 import mothwh from '../assets/images/moot_whole.7e45392a.webp'
-import redlentil from '../assets/images/whole_red_lentils.8306c067 (1).webp'
 import redsplit from '../assets/images/red_split_lentils.ab1bf777 (1).webp'
 import brownflax from '../assets/images/brownflexseed.jpeg'
 import brownmustard from '../assets/images/brown_mustard_seeds.07b01cb0.webp'
 import canary from '../assets/images/canary_seeds.866fae94.webp'
 import canola from '../assets/images/canola.62df6159.webp'
-import hemp from '../assets/images/hemp_seeds.503e99e3.webp'
 import sunflower from '../assets/images/sunflower_seeds.8598f748.webp'
 import yellowflex from '../assets/images/yellow_flax_seeds.55a86786.webp'
 import coriander from '../assets/images/coriander_seeds.5d68460b.webp'
@@ -50,7 +47,7 @@ import gond from '../assets/images/EDIBLE-GUM-_-GONDH-min.png'
 import makhana from '../assets/images/FOXNUTS-_-MAKHANA-min.png'
 import dates from '../assets/images/DRIED-DATES-_-KHAJOOR-min.png'
 import pista from '../assets/images/PISTACHIO-_-PISTA-min.png'
-import almond from '../assets/images/ALMONDS-_-BADAM-min.png'
+import almond from '../assets/images/almonds1.webp'
 import saffron from '../assets/images/SAFFRON-_-KESAR-min.png'
 import haldi from '../assets/images/TURMERIC-_-HALDI-min.png'
 import elaichi from '../assets/images/CARDAMOM-_-ELAICHI-min.png'
@@ -60,7 +57,7 @@ import jaiphal from '../assets/images/NUTMEG-_-JAIPHAL-min.png'
 import laung from '../assets/images/CLOVE-_-LAUNG-min.png'
 import tamarind  from '../assets/images/TAMARIND-_-IMLI-min.png'
 import hing from '../assets/images/ASAFOETIDA-_-HING-min.png'
-import ajwain from '../assets/images/CAROM-SEEDS-_-AJWAIN-min.png'
+import ajwain from '../assets/images/ajwain.png'
 import staranise from '../assets/images/STAR-ANISE-_-CHAKRA-PHOOL-min.png'
 import kalonji from '../assets/images/NIGELLA-SATIVA-_-KALONJI-min.png'
 import blackcumin from '../assets/images/kalajeera.jpg'
@@ -87,199 +84,7 @@ const categories = [
 ];
  
 const products = {
-   pulses : [
-  {
-    id: "kabuli",
-    name: "Kabuli Chickpeas",
-    img: kabuli1,
-    desc: "Large white chickpeas widely used in hummus, salads, and curries. Premium export quality with global demand.",
-    nutrients: [
-      { icon: "💪", label: "Protein", val: "19g / 100g" },
-      { icon: "🌿", label: "Fiber", val: "7.6g / 100g" },
-      { icon: "⚙️", label: "Iron", val: "6.2 mg" },
-      { icon: "🔋", label: "Potassium", val: "875 mg" },
-    ],
-    tags: ["High Protein", "Export Quality", "Non-GMO"],
-  },
-
-  {
-    id: "desi",
-    name: "Desi Chickpeas",
-    img: desicheakpea1,
-    desc: "Smaller dark chickpeas rich in fiber and widely used in Indian cooking and flour production.",
-    nutrients: [
-      { icon: "💪", label: "Protein", val: "22g / 100g" },
-      { icon: "🌿", label: "Fiber", val: "9g / 100g" },
-      { icon: "🦴", label: "Calcium", val: "105 mg" },
-      { icon: "⚙️", label: "Iron", val: "7.1 mg" },
-    ],
-    tags: ["Organic Available", "High Fiber"],
-  },
-
-  {
-    id: "eston",
-    name: "Eston Lentils",
-    img: estonlentils,
-    desc: "Small green lentils with firm texture and mild flavor, perfect for soups and salads.",
-    nutrients: [
-      { icon: "💪", label: "Protein", val: "25g / 100g" },
-      { icon: "🌿", label: "Fiber", val: "10g / 100g" },
-      { icon: "⚙️", label: "Iron", val: "7.5 mg" },
-      { icon: "🔋", label: "Potassium", val: "677 mg" },
-    ],
-    tags: ["Premium Grade", "Export Ready"],
-  },
-
-  {
-    id: "laird",
-    name: "Laird Lentils",
-    img: lairdlentils,
-    desc: "Large green lentils that hold shape well during cooking, ideal for salads and stews.",
-    nutrients: [
-      { icon: "💪", label: "Protein", val: "24g / 100g" },
-      { icon: "🌿", label: "Fiber", val: "10g / 100g" },
-      { icon: "⚙️", label: "Iron", val: "6.5 mg" },
-      { icon: "🔋", label: "Potassium", val: "580 mg" },
-    ],
-    tags: ["Bulk Available", "FSSAI Certified"],
-  },
-
-  {
-    id: "redfootball",
-    name: "Red Football Lentils",
-    img: redfootball,
-    desc: "Bright red lentils widely used in Indian dal and Middle Eastern dishes.",
-    nutrients: [
-      { icon: "💪", label: "Protein", val: "26g / 100g" },
-      { icon: "🌿", label: "Fiber", val: "8g / 100g" },
-      { icon: "⚙️", label: "Iron", val: "7.5 mg" },
-      { icon: "🔋", label: "Potassium", val: "677 mg" },
-    ],
-    tags: ["Fast Cooking", "Export Ready"],
-  },
-
-  {
-    id: "redsplit",
-    name: "Red Split Lentils",
-    img: redsplit,
-    desc: "Quick-cooking lentils with high nutritional value, ideal for daily cooking.",
-    nutrients: [
-      { icon: "💪", label: "Protein", val: "25g / 100g" },
-      { icon: "🌿", label: "Fiber", val: "8g / 100g" },
-      { icon: "⚙️", label: "Iron", val: "7 mg" },
-    ],
-    tags: ["Daily Use", "High Demand"],
-  },
-
-  {
-    id: "wholered",
-    name: "Whole Red Lentils",
-    img: redlentil,
-    desc: "Whole red lentils with strong flavor and high protein content.",
-    nutrients: [
-      { icon: "💪", label: "Protein", val: "24g / 100g" },
-      { icon: "🌿", label: "Fiber", val: "9g / 100g" },
-      { icon: "⚙️", label: "Iron", val: "7 mg" },
-    ],
-    tags: ["Whole Grain", "Export Quality"],
-  },
-
-  {
-    id: "greenpeas",
-    name: "Green Peas",
-    img: greanpea,
-    desc: "High-quality green peas used in food processing and retail markets worldwide.",
-    nutrients: [
-      { icon: "💪", label: "Protein", val: "21g / 100g" },
-      { icon: "🌿", label: "Fiber", val: "5g / 100g" },
-      { icon: "🔋", label: "Potassium", val: "873 mg" },
-    ],
-    tags: ["Global Demand", "High Nutrition"],
-  },
-
-  {
-    id: "greensplit",
-    name: "Green Split Peas",
-    img: greensplit,
-    desc: "Split green peas widely used in soups and processed foods.",
-    nutrients: [
-      { icon: "💪", label: "Protein", val: "22g / 100g" },
-      { icon: "🌿", label: "Fiber", val: "8g / 100g" },
-      { icon: "⚙️", label: "Iron", val: "5 mg" },
-    ],
-    tags: ["Processing Grade", "Export Ready"],
-  },
-
-  {
-    id: "yellowpeas",
-    name: "Yellow Peas",
-    img: yellowpea,
-    desc: "Popular pulse used in food manufacturing and protein extraction.",
-    nutrients: [
-      { icon: "💪", label: "Protein", val: "23g / 100g" },
-      { icon: "🌿", label: "Fiber", val: "7g / 100g" },
-      { icon: "⚙️", label: "Iron", val: "5.5 mg" },
-    ],
-    tags: ["Industrial Use", "High Protein"],
-  },
-   {
-    id: "yellowsplit",
-    name: "Yellow Split Peas",
-    img: yellowsplit,
-    desc: "Split yellow peas widely used in soups, curries, and processed food products.",
-    nutrients: [
-      { icon: "💪", label: "Protein", val: "24g / 100g" },
-      { icon: "🌿", label: "Fiber", val: "8g / 100g" },
-      { icon: "⚙️", label: "Iron", val: "5.5 mg" },
-    ],
-    tags: ["High Protein", "Processing Grade"],
-  },
-
-  {
-    id: "darkredkidney",
-    name: "Dark Red Kidney Beans",
-    img: darkred,
-    origin: "India",
-    season: "Year Round",
-    desc: "Dark red kidney beans with a rich flavor, commonly used in rajma dishes worldwide.",
-    nutrients: [
-      { icon: "💪", label: "Protein", val: "24g / 100g" },
-      { icon: "🌿", label: "Fiber", val: "6.4g / 100g" },
-      { icon: "⚙️", label: "Iron", val: "5 mg" },
-    ],
-    tags: ["High Demand", "Export Quality"],
-  },
-
-  {
-    id: "lightredkidney",
-    name: "Light Red Kidney Beans",
-    img: lightred,
-    origin: "India",
-    season: "Year Round",
-    desc: "Light red beans with smooth texture, ideal for curries and canned food production.",
-    nutrients: [
-      { icon: "💪", label: "Protein", val: "23g / 100g" },
-      { icon: "🌿", label: "Fiber", val: "6g / 100g" },
-      { icon: "⚙️", label: "Iron", val: "5 mg" },
-    ],
-    tags: ["Processing Ready", "Export Grade"],
-  },
-
-  {
-    id: "whitekidney",
-    name: "White Kidney Beans",
-    img: whitekidney,
-    origin: "India",
-    season: "Year Round",
-    desc: "Also known as cannellini beans, widely used in salads and Mediterranean cuisine.",
-    nutrients: [
-      { icon: "💪", label: "Protein", val: "22g / 100g" },
-      { icon: "🌿", label: "Fiber", val: "6g / 100g" },
-      { icon: "⚙️", label: "Iron", val: "4.5 mg" },
-    ],
-    tags: ["Premium Quality", "Global Export"],
-  },
-
+ pulses: [
   {
     id: "blackbeans",
     name: "Black Beans",
@@ -294,67 +99,19 @@ const products = {
     ],
     tags: ["High Fiber", "Export Ready"],
   },
-
-  {
-    id: "cranberrybeans",
-    name: "Cranberry Beans",
-    img: cranberry,
-    origin: "India / USA",
-    season: "Year Round",
-    desc: "Cream-colored beans with red speckles, used in Italian and European cuisine.",
+   {
+    id: "kabuli",
+    name: "Chickpeas",
+    img: kabuli1,
+    desc: "Large white chickpeas widely used in hummus, salads, and curries. Premium export quality with global demand.",
     nutrients: [
-      { icon: "💪", label: "Protein", val: "22g / 100g" },
-      { icon: "🌿", label: "Fiber", val: "7g / 100g" },
-      { icon: "⚙️", label: "Iron", val: "5 mg" },
+      { icon: "💪", label: "Protein", val: "19g / 100g" },
+      { icon: "🌿", label: "Fiber", val: "7.6g / 100g" },
+      { icon: "⚙️", label: "Iron", val: "6.2 mg" },
+      { icon: "🔋", label: "Potassium", val: "875 mg" },
     ],
-    tags: ["Premium Export", "European Demand"],
+    tags: ["High Protein", "Export Quality", "Non-GMO"],
   },
-
-  {
-    id: "pintobeans",
-    name: "Pinto Beans",
-    img: pinto,
-    origin: "USA / India",
-    season: "Year Round",
-    desc: "Speckled beans widely used in Mexican cuisine and refried beans.",
-    nutrients: [
-      { icon: "💪", label: "Protein", val: "21g / 100g" },
-      { icon: "🌿", label: "Fiber", val: "9g / 100g" },
-      { icon: "⚙️", label: "Iron", val: "5 mg" },
-    ],
-    tags: ["High Fiber", "Global Cuisine"],
-  },
-
-  {
-    id: "greatnorthern",
-    name: "Great Northern Beans",
-    img: greennorth,
-    origin: "USA",
-    season: "Year Round",
-    desc: "Mild flavored white beans used in soups and baked dishes.",
-    nutrients: [
-      { icon: "💪", label: "Protein", val: "22g / 100g" },
-      { icon: "🌿", label: "Fiber", val: "7g / 100g" },
-      { icon: "⚙️", label: "Iron", val: "4 mg" },
-    ],
-    tags: ["Mild Flavor", "Soup Grade"],
-  },
-
-  {
-    id: "navybean",
-    name: "Navy Beans",
-    img:navybean,
-    origin: "USA",
-    season: "Year Round",
-    desc: "Small white beans used in baked beans and processed foods.",
-    nutrients: [
-      { icon: "💪", label: "Protein", val: "22g / 100g" },
-      { icon: "🌿", label: "Fiber", val: "10g / 100g" },
-      { icon: "⚙️", label: "Iron", val: "5 mg" },
-    ],
-    tags: ["Processing Grade", "High Fiber"],
-  },
-
   {
     id: "chanadal",
     name: "Chana Dal",
@@ -370,6 +127,125 @@ const products = {
     tags: ["Daily Use", "High Demand"],
   },
   {
+    id: "cranberrybeans",
+    name: "Cranberry Beans",
+    img: cranberry,
+    origin: "India / USA",
+    season: "Year Round",
+    desc: "Cream-colored beans with red speckles, used in Italian and European cuisine.",
+    nutrients: [
+      { icon: "💪", label: "Protein", val: "22g / 100g" },
+      { icon: "🌿", label: "Fiber", val: "7g / 100g" },
+      { icon: "⚙️", label: "Iron", val: "5 mg" },
+    ],
+    tags: ["Premium Export", "European Demand"],
+  },
+  {
+    id: "darkredkidney",
+    name: "Dark Red Kidney Beans",
+    img: darkred,
+    origin: "India",
+    season: "Year Round",
+    desc: "Dark red kidney beans with a rich flavor, commonly used in rajma dishes worldwide.",
+    nutrients: [
+      { icon: "💪", label: "Protein", val: "24g / 100g" },
+      { icon: "🌿", label: "Fiber", val: "6.4g / 100g" },
+      { icon: "⚙️", label: "Iron", val: "5 mg" },
+    ],
+    tags: ["High Demand", "Export Quality"],
+  },
+  {
+    id: "desi",
+    name: "Desi Chickpeas",
+    img: desicheakpea1,
+    desc: "Smaller dark chickpeas rich in fiber and widely used in Indian cooking and flour production.",
+    nutrients: [
+      { icon: "💪", label: "Protein", val: "22g / 100g" },
+      { icon: "🌿", label: "Fiber", val: "9g / 100g" },
+      { icon: "🦴", label: "Calcium", val: "105 mg" },
+      { icon: "⚙️", label: "Iron", val: "7.1 mg" },
+    ],
+    tags: ["Organic Available", "High Fiber"],
+  },
+  {
+    id: "eston",
+    name: "Eston Lentils",
+    img: estonlentils,
+    desc: "Small green lentils with firm texture and mild flavor, perfect for soups and salads.",
+    nutrients: [
+      { icon: "💪", label: "Protein", val: "25g / 100g" },
+      { icon: "🌿", label: "Fiber", val: "10g / 100g" },
+      { icon: "⚙️", label: "Iron", val: "7.5 mg" },
+      { icon: "🔋", label: "Potassium", val: "677 mg" },
+    ],
+    tags: ["Premium Grade", "Export Ready"],
+  },
+  {
+    id: "greatnorthern",
+    name: "Great Northern Beans",
+    img: greennorth,
+    origin: "USA",
+    season: "Year Round",
+    desc: "Mild flavored white beans used in soups and baked dishes.",
+    nutrients: [
+      { icon: "💪", label: "Protein", val: "22g / 100g" },
+      { icon: "🌿", label: "Fiber", val: "7g / 100g" },
+      { icon: "⚙️", label: "Iron", val: "4 mg" },
+    ],
+    tags: ["Mild Flavor", "Soup Grade"],
+  },
+  {
+    id: "greenpeas",
+    name: "Green Peas",
+    img: greanpea,
+    desc: "High-quality green peas used in food processing and retail markets worldwide.",
+    nutrients: [
+      { icon: "💪", label: "Protein", val: "21g / 100g" },
+      { icon: "🌿", label: "Fiber", val: "5g / 100g" },
+      { icon: "🔋", label: "Potassium", val: "873 mg" },
+    ],
+    tags: ["Global Demand", "High Nutrition"],
+  },
+  {
+    id: "greensplit",
+    name: "Green Split Peas",
+    img: greensplit,
+    desc: "Split green peas widely used in soups and processed foods.",
+    nutrients: [
+      { icon: "💪", label: "Protein", val: "22g / 100g" },
+      { icon: "🌿", label: "Fiber", val: "8g / 100g" },
+      { icon: "⚙️", label: "Iron", val: "5 mg" },
+    ],
+    tags: ["Processing Grade", "Export Ready"],
+  },
+  {
+    id: "laird",
+    name: "Laird Lentils",
+    img: lairdlentils,
+    desc: "Large green lentils that hold shape well during cooking, ideal for salads and stews.",
+    nutrients: [
+      { icon: "💪", label: "Protein", val: "24g / 100g" },
+      { icon: "🌿", label: "Fiber", val: "10g / 100g" },
+      { icon: "⚙️", label: "Iron", val: "6.5 mg" },
+      { icon: "🔋", label: "Potassium", val: "580 mg" },
+    ],
+    tags: ["Bulk Available", "FSSAI Certified"],
+  },
+  {
+    id: "lightredkidney",
+    name: "Light Red Kidney Beans",
+    img: lightred,
+    origin: "India",
+    season: "Year Round",
+    desc: "Light red beans with smooth texture, ideal for curries and canned food production.",
+    nutrients: [
+      { icon: "💪", label: "Protein", val: "23g / 100g" },
+      { icon: "🌿", label: "Fiber", val: "6g / 100g" },
+      { icon: "⚙️", label: "Iron", val: "5 mg" },
+    ],
+    tags: ["Processing Ready", "Export Grade"],
+  },
+  {
     id: "moongchilka",
     name: "Moong Dal Chilka",
     img: moongch,
@@ -383,7 +259,6 @@ const products = {
     ],
     tags: ["Healthy Choice", "High Fiber"],
   },
-
   {
     id: "moongwash",
     name: "Moong Dal Wash",
@@ -398,7 +273,6 @@ const products = {
     ],
     tags: ["Easy Digest", "Fast Cooking"],
   },
-
   {
     id: "moongwhole",
     name: "Moong Whole",
@@ -413,7 +287,6 @@ const products = {
     ],
     tags: ["Sprouting Grade", "High Nutrition"],
   },
-
   {
     id: "mothwhole",
     name: "Moth Whole",
@@ -428,7 +301,59 @@ const products = {
     ],
     tags: ["Traditional Use", "High Fiber"],
   },
-
+  {
+    id: "navybean",
+    name: "Navy Beans",
+    img: navybean,
+    origin: "USA",
+    season: "Year Round",
+    desc: "Small white beans used in baked beans and processed foods.",
+    nutrients: [
+      { icon: "💪", label: "Protein", val: "22g / 100g" },
+      { icon: "🌿", label: "Fiber", val: "10g / 100g" },
+      { icon: "⚙️", label: "Iron", val: "5 mg" },
+    ],
+    tags: ["Processing Grade", "High Fiber"],
+  },
+  {
+    id: "pintobeans",
+    name: "Pinto Beans",
+    img: pinto,
+    origin: "USA / India",
+    season: "Year Round",
+    desc: "Speckled beans widely used in Mexican cuisine and refried beans.",
+    nutrients: [
+      { icon: "💪", label: "Protein", val: "21g / 100g" },
+      { icon: "🌿", label: "Fiber", val: "9g / 100g" },
+      { icon: "⚙️", label: "Iron", val: "5 mg" },
+    ],
+    tags: ["High Fiber", "Global Cuisine"],
+  },
+  {
+    id: "redfootball",
+    name: "Red Football Lentils",
+    img: redfootball,
+    desc: "Bright red lentils widely used in Indian dal and Middle Eastern dishes.",
+    nutrients: [
+      { icon: "💪", label: "Protein", val: "26g / 100g" },
+      { icon: "🌿", label: "Fiber", val: "8g / 100g" },
+      { icon: "⚙️", label: "Iron", val: "7.5 mg" },
+      { icon: "🔋", label: "Potassium", val: "677 mg" },
+    ],
+    tags: ["Fast Cooking", "Export Ready"],
+  },
+  {
+    id: "redsplit",
+    name: "Red Split Lentils",
+    img: redsplit,
+    desc: "Quick-cooking lentils with high nutritional value, ideal for daily cooking.",
+    nutrients: [
+      { icon: "💪", label: "Protein", val: "25g / 100g" },
+      { icon: "🌿", label: "Fiber", val: "8g / 100g" },
+      { icon: "⚙️", label: "Iron", val: "7 mg" },
+    ],
+    tags: ["Daily Use", "High Demand"],
+  },
   {
     id: "toordal",
     name: "Toor Dal",
@@ -443,7 +368,6 @@ const products = {
     ],
     tags: ["Daily Use", "High Demand"],
   },
-
   {
     id: "uradchilka",
     name: "Urad Dal Chilka",
@@ -458,22 +382,6 @@ const products = {
     ],
     tags: ["High Nutrition", "Traditional"],
   },
-
-  {
-    id: "uradwash",
-    name: "Urad Dal Wash",
-    img: uradws,
-    origin: "India",
-    season: "Year Round",
-    desc: "Skinless urad dal widely used for dosa, idli batter and dals.",
-    nutrients: [
-      { icon: "💪", label: "Protein", val: "25g / 100g" },
-      { icon: "🌿", label: "Fiber", val: "7g / 100g" },
-      { icon: "⚙️", label: "Iron", val: "7 mg" },
-    ],
-    tags: ["South Indian Use", "High Protein"],
-  },
-
   {
     id: "uradgota",
     name: "Urad Gota",
@@ -488,7 +396,20 @@ const products = {
     ],
     tags: ["Snack Industry", "Export Grade"],
   },
-
+  {
+    id: "uradwash",
+    name: "Urad Dal Wash",
+    img: uradws,
+    origin: "India",
+    season: "Year Round",
+    desc: "Skinless urad dal widely used for dosa, idli batter and dals.",
+    nutrients: [
+      { icon: "💪", label: "Protein", val: "25g / 100g" },
+      { icon: "🌿", label: "Fiber", val: "7g / 100g" },
+      { icon: "⚙️", label: "Iron", val: "7 mg" },
+    ],
+    tags: ["South Indian Use", "High Protein"],
+  },
   {
     id: "uradwhole",
     name: "Urad Whole",
@@ -503,9 +424,32 @@ const products = {
     ],
     tags: ["Premium Use", "High Fiber"],
   },
-
+  {
+    id: "yellowpeas",
+    name: "Yellow Peas",
+    img: yellowpea,
+    desc: "Popular pulse used in food manufacturing and protein extraction.",
+    nutrients: [
+      { icon: "💪", label: "Protein", val: "23g / 100g" },
+      { icon: "🌿", label: "Fiber", val: "7g / 100g" },
+      { icon: "⚙️", label: "Iron", val: "5.5 mg" },
+    ],
+    tags: ["Industrial Use", "High Protein"],
+  },
+  {
+    id: "yellowsplit",
+    name: "Yellow Split Peas",
+    img: yellowsplit,
+    desc: "Split yellow peas widely used in soups, curries, and processed food products.",
+    nutrients: [
+      { icon: "💪", label: "Protein", val: "24g / 100g" },
+      { icon: "🌿", label: "Fiber", val: "8g / 100g" },
+      { icon: "⚙️", label: "Iron", val: "5.5 mg" },
+    ],
+    tags: ["High Protein", "Processing Grade"],
+  },
 ],
-  oilseeds : [
+ oilseeds : [
   {
     id: "brownflax",
     name: "Brown Flax Seeds",
@@ -571,40 +515,6 @@ const products = {
   },
 
   {
-    id: "coriander",
-    name: "Coriander Seeds",
-    img: coriander,
-    origin: "India",
-    season: "Feb – Apr",
-    desc: "Aromatic seeds used as both spice and oilseed, widely used in culinary and medicinal applications.",
-    nutrients: [
-      { icon: "💪", label: "Protein", val: "12g / 100g" },
-      { icon: "🌿", label: "Fiber", val: "41g / 100g" },
-      { icon: "⚙️", label: "Iron", val: "16 mg" },
-      { icon: "🦴", label: "Calcium", val: "709 mg" },
-      { icon: "🔋", label: "Magnesium", val: "330 mg" },
-      { icon: "🧬", label: "Vitamin C", val: "21 mg" },
-    ],
-    tags: ["Spice Grade", "Aromatic"],
-  },
-
-  {
-    id: "hemp",
-    name: "Hemp Seeds",
-    img: hemp,
-    desc: "Highly nutritious seeds rich in protein, omega fatty acids, and essential amino acids.",
-    nutrients: [
-      { icon: "💪", label: "Protein", val: "31g / 100g" },
-      { icon: "🌿", label: "Fiber", val: "4g / 100g" },
-      { icon: "⚙️", label: "Omega-3", val: "8g" },
-      { icon: "🦴", label: "Magnesium", val: "700 mg" },
-      { icon: "🔋", label: "Iron", val: "8 mg" },
-      { icon: "🧬", label: "Amino Acids", val: "Complete" },
-    ],
-    tags: ["Superfood", "High Protein"],
-  },
-
-  {
     id: "sunflower",
     name: "Sunflower Seeds",
     img: sunflower,
@@ -655,23 +565,41 @@ const products = {
   },
 ],
   peanuts :[
-  {
-    id: "peanuts",
-    name: "Raw Peanuts (Groundnuts)",
-    img: rawpeanuts,
-    origin: "India (Gujarat / Andhra Pradesh)",
-    season: "Oct – Feb",
-    desc: "High-quality raw peanuts with bold kernels and natural sweetness. Widely used in snacks, peanut butter, oil extraction, and global food processing industries.",
+    {
+    id: "blanched-peanuts",
+    name: "Blanched Peanuts",
+    img: balancepeanuts,
+    origin: "India / Argentina",
+    season: "Year Round",
+    desc: "Skinless peanuts processed for a clean appearance and smooth texture. Widely used in confectionery, peanut butter, and bakery products.",
     nutrients: [
-      { icon: "💪", label: "Protein", val: "25.8g / 100g" },
-      { icon: "🌿", label: "Fiber", val: "8.5g / 100g" },
-      { icon: "⚙️", label: "Iron", val: "4.6 mg" },
-      { icon: "🦴", label: "Calcium", val: "92 mg" },
-      { icon: "🔋", label: "Magnesium", val: "168 mg" },
-      { icon: "🧬", label: "Vitamin E", val: "8.3 mg" },
+      { icon: "💪", label: "Protein", val: "25g / 100g" },
+      { icon: "🌿", label: "Fiber", val: "7g / 100g" },
+      { icon: "⚙️", label: "Iron", val: "4.5 mg" },
+      { icon: "🦴", label: "Calcium", val: "85 mg" },
+      { icon: "🔋", label: "Healthy Fats", val: "48g" },
+      { icon: "🧬", label: "Vitamin B6", val: "0.35 mg" },
     ],
-    tags: ["Bold Kernels", "Moisture < 8%", "Hand Picked"],
+    tags: ["Skinless", "Ready to Use", "Premium Quality"],
   },
+   {
+    id: "bold-peanuts",
+    name: "Bold Peanuts",
+    img: boldpeanuts,
+    origin: "India (Gujarat)",
+    season: "Oct – Jan",
+    desc: "Large-sized bold peanuts with uniform shape and rich taste. Highly preferred for direct consumption, roasting, and premium snack production.",
+    nutrients: [
+      { icon: "💪", label: "Protein", val: "26.5g / 100g" },
+      { icon: "🌿", label: "Fiber", val: "8g / 100g" },
+      { icon: "⚙️", label: "Iron", val: "5 mg" },
+      { icon: "🦴", label: "Calcium", val: "95 mg" },
+      { icon: "🔋", label: "Potassium", val: "705 mg" },
+      { icon: "🧬", label: "Vitamin E", val: "8 mg" },
+    ],
+    tags: ["Bold Size", "Uniform Grading", "Export Quality"],
+  },
+ 
   {
     id: "java-peanuts",
     name: "Java Peanuts",
@@ -689,42 +617,45 @@ const products = {
     ],
     tags: ["High Oil Content", "Java Grade", "Machine Cleaned"],
   },
-  {
-    id: "bold-peanuts",
-    name: "Bold Peanuts",
-    img: boldpeanuts,
-    origin: "India (Gujarat)",
-    season: "Oct – Jan",
-    desc: "Large-sized bold peanuts with uniform shape and rich taste. Highly preferred for direct consumption, roasting, and premium snack production.",
+   {
+    id: "peanuts",
+    name: "Raw Peanuts (Groundnuts)",
+    img: rawpeanuts,
+    origin: "India (Gujarat / Andhra Pradesh)",
+    season: "Oct – Feb",
+    desc: "High-quality raw peanuts with bold kernels and natural sweetness. Widely used in snacks, peanut butter, oil extraction, and global food processing industries.",
     nutrients: [
-      { icon: "💪", label: "Protein", val: "26.5g / 100g" },
-      { icon: "🌿", label: "Fiber", val: "8g / 100g" },
-      { icon: "⚙️", label: "Iron", val: "5 mg" },
-      { icon: "🦴", label: "Calcium", val: "95 mg" },
-      { icon: "🔋", label: "Potassium", val: "705 mg" },
-      { icon: "🧬", label: "Vitamin E", val: "8 mg" },
+      { icon: "💪", label: "Protein", val: "25.8g / 100g" },
+      { icon: "🌿", label: "Fiber", val: "8.5g / 100g" },
+      { icon: "⚙️", label: "Iron", val: "4.6 mg" },
+      { icon: "🦴", label: "Calcium", val: "92 mg" },
+      { icon: "🔋", label: "Magnesium", val: "168 mg" },
+      { icon: "🧬", label: "Vitamin E", val: "8.3 mg" },
     ],
-    tags: ["Bold Size", "Uniform Grading", "Export Quality"],
+    tags: ["Bold Kernels", "Moisture < 8%", "Hand Picked"],
   },
-  {
-    id: "blanched-peanuts",
-    name: "Blanched Peanuts",
-    img: balancepeanuts,
-    origin: "India / Argentina",
-    season: "Year Round",
-    desc: "Skinless peanuts processed for a clean appearance and smooth texture. Widely used in confectionery, peanut butter, and bakery products.",
-    nutrients: [
-      { icon: "💪", label: "Protein", val: "25g / 100g" },
-      { icon: "🌿", label: "Fiber", val: "7g / 100g" },
-      { icon: "⚙️", label: "Iron", val: "4.5 mg" },
-      { icon: "🦴", label: "Calcium", val: "85 mg" },
-      { icon: "🔋", label: "Healthy Fats", val: "48g" },
-      { icon: "🧬", label: "Vitamin B6", val: "0.35 mg" },
-    ],
-    tags: ["Skinless", "Ready to Use", "Premium Quality"],
-  },
+ 
+  
 ],
-  dryfruits : [
+  dryfruits: [
+  {
+    id: "almond",
+    name: "Almonds (Badam)",
+    img: almond,
+    origin: "USA / India",
+    season: "Aug – Oct",
+    desc: "High-quality almonds with a crunchy texture and rich taste. Widely used in snacks, sweets, and health foods.",
+    nutrients: [
+      { icon: "💪", label: "Protein", val: "21g / 100g" },
+      { icon: "🌿", label: "Fiber", val: "12.5g / 100g" },
+      { icon: "⚙️", label: "Iron", val: "3.7 mg" },
+      { icon: "🦴", label: "Calcium", val: "269 mg" },
+      { icon: "🔋", label: "Magnesium", val: "270 mg" },
+      { icon: "🧬", label: "Vitamin E", val: "25.6 mg" },
+    ],
+    tags: ["Mamra / California", "Premium Quality"],
+  },
+
   {
     id: "cashew",
     name: "Cashew Nuts",
@@ -742,57 +673,7 @@ const products = {
     ],
     tags: ["W180 / W240 / W320", "Export Quality"],
   },
-  {
-    id: "raisins",
-    name: "Raisins (Kishmish)",
-    img: raisins,
-    origin: "India / Turkey",
-    season: "Jan – Apr",
-    desc: "Naturally dried grapes with a sweet taste and soft texture. Used in bakery, desserts, and traditional dishes worldwide.",
-    nutrients: [
-      { icon: "💪", label: "Protein", val: "3.1g / 100g" },
-      { icon: "🌿", label: "Fiber", val: "3.7g / 100g" },
-      { icon: "⚙️", label: "Iron", val: "1.9 mg" },
-      { icon: "🦴", label: "Calcium", val: "50 mg" },
-      { icon: "🔋", label: "Potassium", val: "749 mg" },
-      { icon: "🧬", label: "Vitamin C", val: "2.3 mg" },
-    ],
-    tags: ["Golden / Black", "Seedless"],
-  },
-  {
-    id: "walnut",
-    name: "Walnuts (Akhrot)",
-    img: walnut,
-    origin: "India (Kashmir) / USA",
-    season: "Sep – Dec",
-    desc: "Crunchy walnuts rich in omega-3 fatty acids. Ideal for direct consumption, bakery, and health foods.",
-    nutrients: [
-      { icon: "💪", label: "Protein", val: "15.2g / 100g" },
-      { icon: "🌿", label: "Fiber", val: "6.7g / 100g" },
-      { icon: "⚙️", label: "Iron", val: "2.9 mg" },
-      { icon: "🦴", label: "Calcium", val: "98 mg" },
-      { icon: "🔋", label: "Omega-3", val: "9g" },
-      { icon: "🧬", label: "Vitamin B6", val: "0.5 mg" },
-    ],
-    tags: ["Light Halves", "Jumbo Size"],
-  },
-  {
-    id: "figs",
-    name: "Figs (Anjeer)",
-    img:figs,
-    origin: "Turkey / Afghanistan",
-    season: "Aug – Oct",
-    desc: "Naturally dried figs with a chewy texture and sweet taste. Rich in fiber and widely used in snacks and desserts.",
-    nutrients: [
-      { icon: "💪", label: "Protein", val: "3.3g / 100g" },
-      { icon: "🌿", label: "Fiber", val: "9.8g / 100g" },
-      { icon: "⚙️", label: "Iron", val: "2 mg" },
-      { icon: "🦴", label: "Calcium", val: "162 mg" },
-      { icon: "🔋", label: "Potassium", val: "680 mg" },
-      { icon: "🧬", label: "Vitamin K", val: "15.6 µg" },
-    ],
-    tags: ["A Grade", "Soft Texture"],
-  },
+
   {
     id: "dates",
     name: "Dates (Khajoor)",
@@ -810,23 +691,7 @@ const products = {
     ],
     tags: ["Medjool / Ajwa", "Natural Sweet"],
   },
-  {
-    id: "makhana",
-    name: "Foxnuts (Makhana)",
-    img: makhana,
-    origin: "India (Bihar)",
-    season: "Year Round",
-    desc: "Light and crunchy foxnuts known for their low fat and high nutritional value. Popular as a healthy snack.",
-    nutrients: [
-      { icon: "💪", label: "Protein", val: "9.7g / 100g" },
-      { icon: "🌿", label: "Fiber", val: "7.6g / 100g" },
-      { icon: "⚙️", label: "Iron", val: "1.4 mg" },
-      { icon: "🦴", label: "Calcium", val: "60 mg" },
-      { icon: "🔋", label: "Magnesium", val: "67 mg" },
-      { icon: "🧬", label: "Antioxidants", val: "High" },
-    ],
-    tags: ["Roasted", "Premium Quality"],
-  },
+
   {
     id: "gond",
     name: "Edible Gum (Gond)",
@@ -844,23 +709,43 @@ const products = {
     ],
     tags: ["Natural", "Food Grade"],
   },
+
   {
-    id: "saffron",
-    name: "Saffron (Kesar)",
-    img: saffron,
-    origin: "India (Kashmir) / Iran",
-    season: "Oct – Nov",
-    desc: "World’s most premium spice with deep aroma and color. Used in culinary, medicinal, and cosmetic industries.",
+    id: "figs",
+    name: "Figs (Anjeer)",
+    img: figs,
+    origin: "Turkey / Afghanistan",
+    season: "Aug – Oct",
+    desc: "Naturally dried figs with a chewy texture and sweet taste. Rich in fiber and widely used in snacks and desserts.",
     nutrients: [
-      { icon: "💪", label: "Antioxidants", val: "High" },
-      { icon: "🌿", label: "Fiber", val: "3.9g / 100g" },
-      { icon: "⚙️", label: "Iron", val: "11 mg" },
-      { icon: "🦴", label: "Calcium", val: "111 mg" },
-      { icon: "🔋", label: "Vitamin C", val: "80 mg" },
-      { icon: "🧬", label: "Potassium", val: "1724 mg" },
+      { icon: "💪", label: "Protein", val: "3.3g / 100g" },
+      { icon: "🌿", label: "Fiber", val: "9.8g / 100g" },
+      { icon: "⚙️", label: "Iron", val: "2 mg" },
+      { icon: "🦴", label: "Calcium", val: "162 mg" },
+      { icon: "🔋", label: "Potassium", val: "680 mg" },
+      { icon: "🧬", label: "Vitamin K", val: "15.6 µg" },
     ],
-    tags: ["Grade 1", "Handpicked"],
+    tags: ["A Grade", "Soft Texture"],
   },
+
+  {
+    id: "makhana",
+    name: "Foxnuts (Makhana)",
+    img: makhana,
+    origin: "India (Bihar)",
+    season: "Year Round",
+    desc: "Light and crunchy foxnuts known for their low fat and high nutritional value. Popular as a healthy snack.",
+    nutrients: [
+      { icon: "💪", label: "Protein", val: "9.7g / 100g" },
+      { icon: "🌿", label: "Fiber", val: "7.6g / 100g" },
+      { icon: "⚙️", label: "Iron", val: "1.4 mg" },
+      { icon: "🦴", label: "Calcium", val: "60 mg" },
+      { icon: "🔋", label: "Magnesium", val: "67 mg" },
+      { icon: "🧬", label: "Antioxidants", val: "High" },
+    ],
+    tags: ["Roasted", "Premium Quality"],
+  },
+
   {
     id: "pistachio",
     name: "Pistachio (Pista)",
@@ -878,206 +763,65 @@ const products = {
     ],
     tags: ["Roasted / Salted", "Premium Grade"],
   },
+
   {
-    id: "almond",
-    name: "Almonds (Badam)",
-    img:almond,
-    origin: "USA / India",
-    season: "Aug – Oct",
-    desc: "High-quality almonds with a crunchy texture and rich taste. Widely used in snacks, sweets, and health foods.",
+    id: "raisins",
+    name: "Raisins (Kishmish)",
+    img: raisins,
+    origin: "India / Turkey",
+    season: "Jan – Apr",
+    desc: "Naturally dried grapes with a sweet taste and soft texture. Used in bakery, desserts, and traditional dishes worldwide.",
     nutrients: [
-      { icon: "💪", label: "Protein", val: "21g / 100g" },
-      { icon: "🌿", label: "Fiber", val: "12.5g / 100g" },
-      { icon: "⚙️", label: "Iron", val: "3.7 mg" },
-      { icon: "🦴", label: "Calcium", val: "269 mg" },
-      { icon: "🔋", label: "Magnesium", val: "270 mg" },
-      { icon: "🧬", label: "Vitamin E", val: "25.6 mg" },
+      { icon: "💪", label: "Protein", val: "3.1g / 100g" },
+      { icon: "🌿", label: "Fiber", val: "3.7g / 100g" },
+      { icon: "⚙️", label: "Iron", val: "1.9 mg" },
+      { icon: "🦴", label: "Calcium", val: "50 mg" },
+      { icon: "🔋", label: "Potassium", val: "749 mg" },
+      { icon: "🧬", label: "Vitamin C", val: "2.3 mg" },
     ],
-    tags: ["Mamra / California", "Premium Quality"],
+    tags: ["Golden / Black", "Seedless"],
+  },
+
+  {
+    id: "saffron",
+    name: "Saffron (Kesar)",
+    img: saffron,
+    origin: "India (Kashmir) / Iran",
+    season: "Oct – Nov",
+    desc: "World’s most premium spice with deep aroma and color. Used in culinary, medicinal, and cosmetic industries.",
+    nutrients: [
+      { icon: "💪", label: "Antioxidants", val: "High" },
+      { icon: "🌿", label: "Fiber", val: "3.9g / 100g" },
+      { icon: "⚙️", label: "Iron", val: "11 mg" },
+      { icon: "🦴", label: "Calcium", val: "111 mg" },
+      { icon: "🔋", label: "Vitamin C", val: "80 mg" },
+      { icon: "🧬", label: "Potassium", val: "1724 mg" },
+    ],
+    tags: ["Grade 1", "Handpicked"],
+  },
+
+  {
+    id: "walnut",
+    name: "Walnuts (Akhrot)",
+    img: walnut,
+    origin: "India (Kashmir) / USA",
+    season: "Sep – Dec",
+    desc: "Crunchy walnuts rich in omega-3 fatty acids. Ideal for direct consumption, bakery, and health foods.",
+    nutrients: [
+      { icon: "💪", label: "Protein", val: "15.2g / 100g" },
+      { icon: "🌿", label: "Fiber", val: "6.7g / 100g" },
+      { icon: "⚙️", label: "Iron", val: "2.9 mg" },
+      { icon: "🦴", label: "Calcium", val: "98 mg" },
+      { icon: "🔋", label: "Omega-3", val: "9g" },
+      { icon: "🧬", label: "Vitamin B6", val: "0.5 mg" },
+    ],
+    tags: ["Light Halves", "Jumbo Size"],
   },
 ],
- spices : [
-  {
-    id: "black-cumin",
-    name: "Black Cumin (Kala Jeera)",
-    img: blackcumin,
-    origin: "India / Afghanistan",
-    season: "Sep – Dec",
-    desc: "Rare and aromatic black cumin seeds with a distinct earthy flavor. Used in premium spice blends and traditional cuisines.",
-    nutrients: [
-      { icon: "💪", label: "Protein", val: "17g / 100g" },
-      { icon: "🌿", label: "Fiber", val: "10g / 100g" },
-      { icon: "⚙️", label: "Iron", val: "66 mg" },
-      { icon: "🦴", label: "Calcium", val: "900 mg" },
-      { icon: "🔋", label: "Magnesium", val: "360 mg" },
-      { icon: "🧬", label: "Antioxidants", val: "High" },
-    ],
-    tags: ["Premium Grade", "Aromatic"],
-  },
-
-  {
-    id: "black-pepper",
-    name: "Black Pepper (Kali Mirch)",
-    img: blackpepper,
-    origin: "India (Kerala)",
-    season: "Dec – Mar",
-    desc: "King of spices known for its strong pungency and aroma. Widely used in global cuisines and spice blends.",
-    nutrients: [
-      { icon: "💪", label: "Protein", val: "10g / 100g" },
-      { icon: "🌿", label: "Fiber", val: "26g / 100g" },
-      { icon: "⚙️", label: "Iron", val: "28 mg" },
-      { icon: "🦴", label: "Calcium", val: "443 mg" },
-      { icon: "🔋", label: "Potassium", val: "1329 mg" },
-      { icon: "🧬", label: "Piperine", val: "High" },
-    ],
-    tags: ["Bold Grade", "Steam Sterilised"],
-  },
-
-  {
-    id: "kasuri-methi",
-    name: "Fenugreek Leaves (Kasuri Methi)",
-    img: kasturimethi,
-    origin: "India (Rajasthan)",
-    season: "Jan – Mar",
-    desc: "Dried fenugreek leaves with a strong aroma used in Indian curries and seasoning blends.",
-    nutrients: [
-      { icon: "💪", label: "Protein", val: "23g / 100g" },
-      { icon: "🌿", label: "Fiber", val: "25g / 100g" },
-      { icon: "⚙️", label: "Iron", val: "33 mg" },
-      { icon: "🦴", label: "Calcium", val: "176 mg" },
-      { icon: "🔋", label: "Potassium", val: "770 mg" },
-      { icon: "🧬", label: "Vitamin A", val: "High" },
-    ],
-    tags: ["Aromatic Leaves", "Premium Quality"],
-  },
-
-  {
-    id: "dry-ginger",
-    name: "Dry Ginger (Sonth)",
-    img: dryginger,
-    origin: "India",
-    season: "Dec – Feb",
-    desc: "Dried ginger roots with strong flavor and medicinal properties. Used in spices, teas, and herbal products.",
-    nutrients: [
-      { icon: "💪", label: "Protein", val: "9g / 100g" },
-      { icon: "🌿", label: "Fiber", val: "14g / 100g" },
-      { icon: "⚙️", label: "Iron", val: "19 mg" },
-      { icon: "🦴", label: "Calcium", val: "114 mg" },
-      { icon: "🔋", label: "Potassium", val: "1320 mg" },
-      { icon: "🧬", label: "Gingerol", val: "High" },
-    ],
-    tags: ["Natural Dry", "Strong Aroma"],
-  },
-
-  {
-    id: "bay-leaves",
-    name: "Bay Leaves (Tej Patta)",
-    img: bayleaves,
-    origin: "India / Nepal",
-    season: "Year Round",
-    desc: "Dried bay leaves used for flavoring curries, soups, and rice dishes.",
-    nutrients: [
-      { icon: "💪", label: "Protein", val: "7.6g / 100g" },
-      { icon: "🌿", label: "Fiber", val: "26g / 100g" },
-      { icon: "⚙️", label: "Iron", val: "43 mg" },
-      { icon: "🦴", label: "Calcium", val: "834 mg" },
-      { icon: "🔋", label: "Magnesium", val: "120 mg" },
-      { icon: "🧬", label: "Vitamin C", val: "46 mg" },
-    ],
-    tags: ["Whole Leaves", "Natural"],
-  },
-
-  {
-    id: "methi-dana",
-    name: "Fenugreek Seeds (Methi Dana)",
-    img: methidana,
-    origin: "India",
-    season: "Feb – Apr",
-    desc: "Golden fenugreek seeds known for their slightly bitter taste and health benefits.",
-    nutrients: [
-      { icon: "💪", label: "Protein", val: "23g / 100g" },
-      { icon: "🌿", label: "Fiber", val: "24g / 100g" },
-      { icon: "⚙️", label: "Iron", val: "33 mg" },
-      { icon: "🦴", label: "Calcium", val: "176 mg" },
-      { icon: "🔋", label: "Magnesium", val: "191 mg" },
-      { icon: "🧬", label: "Saponins", val: "High" },
-    ],
-    tags: ["Sortex Clean", "Export Quality"],
-  },
-
-  {
-    id: "poppy-seeds",
-    name: "Poppy Seeds (Khus Khus)",
-    img: popyseeds,
-    origin: "India / Turkey",
-    season: "Mar – May",
-    desc: "Tiny white seeds with a nutty flavor used in bakery and traditional dishes.",
-    nutrients: [
-      { icon: "💪", label: "Protein", val: "18g / 100g" },
-      { icon: "🌿", label: "Fiber", val: "20g / 100g" },
-      { icon: "⚙️", label: "Iron", val: "9.8 mg" },
-      { icon: "🦴", label: "Calcium", val: "1438 mg" },
-      { icon: "🔋", label: "Magnesium", val: "347 mg" },
-      { icon: "🧬", label: "Healthy Fats", val: "42g" },
-    ],
-    tags: ["White Seeds", "Bakery Grade"],
-  },
-
-  {
-    id: "kalonji",
-    name: "Nigella Seeds (Kalonji)",
-    img: kalonji,
-    origin: "India / Middle East",
-    season: "Feb – Apr",
-    desc: "Black seeds with a slightly bitter taste used in breads, pickles, and traditional medicines.",
-    nutrients: [
-      { icon: "💪", label: "Protein", val: "20g / 100g" },
-      { icon: "🌿", label: "Fiber", val: "12g / 100g" },
-      { icon: "⚙️", label: "Iron", val: "10 mg" },
-      { icon: "🦴", label: "Calcium", val: "931 mg" },
-      { icon: "🔋", label: "Potassium", val: "1788 mg" },
-      { icon: "🧬", label: "Thymoquinone", val: "High" },
-    ],
-    tags: ["Natural Seeds", "Medicinal Use"],
-  },
-
-  {
-    id: "star-anise",
-    name: "Star Anise (Chakra Phool)",
-    img: staranise,
-    origin: "Vietnam / India",
-    season: "Year Round",
-    desc: "Star-shaped spice with a strong licorice flavor used in spice blends and beverages.",
-    nutrients: [
-      { icon: "💪", label: "Fiber", val: "15g / 100g" },
-      { icon: "⚙️", label: "Iron", val: "37 mg" },
-      { icon: "🦴", label: "Calcium", val: "646 mg" },
-      { icon: "🔋", label: "Magnesium", val: "170 mg" },
-      { icon: "🧬", label: "Antioxidants", val: "High" },
-    ],
-    tags: ["Whole Star", "Premium Grade"],
-  },
-
-  {
-    id: "badi-elaichi",
-    name: "Black Cardamom (Badi Elaichi)",
-    img: badielaichi,
-    origin: "India / Nepal",
-    season: "Sep – Nov",
-    desc: "Large smoky flavored cardamom used in curries and spice blends.",
-    nutrients: [
-      { icon: "💪", label: "Fiber", val: "28g / 100g" },
-      { icon: "⚙️", label: "Iron", val: "14 mg" },
-      { icon: "🦴", label: "Calcium", val: "383 mg" },
-      { icon: "🔋", label: "Potassium", val: "1119 mg" },
-      { icon: "🧬", label: "Essential Oils", val: "High" },
-    ],
-    tags: ["Bold Pods", "Smoky Aroma"],
-  },
-
-  {
+spices: [
+   {
     id: "ajwain",
-    name: "Carom Seeds (Ajwain)",
+    name: "Ajwain",
     img: ajwain,
     origin: "India",
     season: "Jan – Mar",
@@ -1091,7 +835,6 @@ const products = {
     ],
     tags: ["Strong Aroma", "Medicinal"],
   },
-
   {
     id: "hing",
     name: "Asafoetida (Hing)",
@@ -1109,42 +852,90 @@ const products = {
     ],
     tags: ["Strong Flavor", "Compound Hing"],
   },
-
+ 
   {
-    id: "imli",
-    name: "Tamarind (Imli)",
-    img: tamarind,
-    origin: "India / Thailand",
-    season: "Mar – Jun",
-    desc: "Sweet and tangy pulp widely used in chutneys, sauces, and beverages.",
+    id: "bay-leaves",
+    name: "Bay Leaves (Tej Patta)",
+    img: bayleaves,
+    origin: "India / Nepal",
+    season: "Year Round",
+    desc: "Dried bay leaves used for flavoring curries, soups, and rice dishes.",
     nutrients: [
-      { icon: "💪", label: "Carbs", val: "63g" },
-      { icon: "🌿", label: "Fiber", val: "5g" },
-      { icon: "⚙️", label: "Iron", val: "2.8 mg" },
-      { icon: "🦴", label: "Calcium", val: "74 mg" },
-      { icon: "🔋", label: "Potassium", val: "628 mg" },
-      { icon: "🧬", label: "Vitamin B1", val: "0.4 mg" },
+      { icon: "💪", label: "Protein", val: "7.6g / 100g" },
+      { icon: "🌿", label: "Fiber", val: "26g / 100g" },
+      { icon: "⚙️", label: "Iron", val: "43 mg" },
+      { icon: "🦴", label: "Calcium", val: "834 mg" },
+      { icon: "🔋", label: "Magnesium", val: "120 mg" },
+      { icon: "🧬", label: "Vitamin C", val: "46 mg" },
     ],
-    tags: ["Seedless", "Natural Pulp"],
+    tags: ["Whole Leaves", "Natural"],
   },
-
   {
-    id: "laung",
-    name: "Cloves (Laung)",
-    img: laung,
-    origin: "India / Indonesia",
-    season: "Dec – Feb",
-    desc: "Highly aromatic dried flower buds used in spices, medicines, and oils.",
+    id: "badi-elaichi",
+    name: "Black Cardamom (Badi Elaichi)",
+    img: badielaichi,
+    origin: "India / Nepal",
+    season: "Sep – Nov",
+    desc: "Large smoky flavored cardamom used in curries and spice blends.",
     nutrients: [
-      { icon: "💪", label: "Fiber", val: "34g / 100g" },
-      { icon: "⚙️", label: "Iron", val: "11.8 mg" },
-      { icon: "🦴", label: "Calcium", val: "632 mg" },
-      { icon: "🔋", label: "Magnesium", val: "259 mg" },
-      { icon: "🧬", label: "Eugenol", val: "High" },
+      { icon: "💪", label: "Fiber", val: "28g / 100g" },
+      { icon: "⚙️", label: "Iron", val: "14 mg" },
+      { icon: "🦴", label: "Calcium", val: "383 mg" },
+      { icon: "🔋", label: "Potassium", val: "1119 mg" },
+      { icon: "🧬", label: "Essential Oils", val: "High" },
     ],
-    tags: ["Bold Size", "High Oil"],
+    tags: ["Bold Pods", "Smoky Aroma"],
   },
-
+  {
+    id: "black-cumin",
+    name: "Black Cumin (Kala Jeera)",
+    img: blackcumin,
+    origin: "India / Afghanistan",
+    season: "Sep – Dec",
+    desc: "Rare and aromatic black cumin seeds with a distinct earthy flavor.",
+    nutrients: [
+      { icon: "💪", label: "Protein", val: "17g / 100g" },
+      { icon: "🌿", label: "Fiber", val: "10g / 100g" },
+      { icon: "⚙️", label: "Iron", val: "66 mg" },
+      { icon: "🦴", label: "Calcium", val: "900 mg" },
+      { icon: "🔋", label: "Magnesium", val: "360 mg" },
+      { icon: "🧬", label: "Antioxidants", val: "High" },
+    ],
+    tags: ["Premium Grade", "Aromatic"],
+  },
+  {
+    id: "black-pepper",
+    name: "Black Pepper (Kali Mirch)",
+    img: blackpepper,
+    origin: "India (Kerala)",
+    season: "Dec – Mar",
+    desc: "King of spices known for its strong pungency and aroma.",
+    nutrients: [
+      { icon: "💪", label: "Protein", val: "10g / 100g" },
+      { icon: "🌿", label: "Fiber", val: "26g / 100g" },
+      { icon: "⚙️", label: "Iron", val: "28 mg" },
+      { icon: "🦴", label: "Calcium", val: "443 mg" },
+      { icon: "🔋", label: "Potassium", val: "1329 mg" },
+      { icon: "🧬", label: "Piperine", val: "High" },
+    ],
+    tags: ["Bold Grade", "Steam Sterilised"],
+  },
+  {
+    id: "elaichi",
+    name: "Cardamom (Elaichi)",
+    img: elaichi,
+    origin: "India (Kerala)",
+    season: "Aug – Dec",
+    desc: "Green aromatic pods used in sweets, tea, and spice blends.",
+    nutrients: [
+      { icon: "💪", label: "Fiber", val: "28g / 100g" },
+      { icon: "⚙️", label: "Iron", val: "14 mg" },
+      { icon: "🦴", label: "Calcium", val: "383 mg" },
+      { icon: "🔋", label: "Potassium", val: "1119 mg" },
+      { icon: "🧬", label: "Essential Oils", val: "High" },
+    ],
+    tags: ["Bold Pods", "Premium Grade"],
+  },
   {
     id: "dalchini",
     name: "Cinnamon (Dalchini)",
@@ -1161,24 +952,90 @@ const products = {
     ],
     tags: ["Ceylon Grade", "Sweet Aroma"],
   },
-
   {
-    id: "elaichi",
-    name: "Cardamom (Elaichi)",
-    img: elaichi,
-    origin: "India (Kerala)",
-    season: "Aug – Dec",
-    desc: "Green aromatic pods used in sweets, tea, and premium spice blends.",
+    id: "laung",
+    name: "Cloves (Laung)",
+    img: laung,
+    origin: "India / Indonesia",
+    season: "Dec – Feb",
+    desc: "Highly aromatic dried flower buds used in spices, medicines, and oils.",
     nutrients: [
-      { icon: "💪", label: "Fiber", val: "28g / 100g" },
-      { icon: "⚙️", label: "Iron", val: "14 mg" },
-      { icon: "🦴", label: "Calcium", val: "383 mg" },
-      { icon: "🔋", label: "Potassium", val: "1119 mg" },
-      { icon: "🧬", label: "Essential Oils", val: "High" },
+      { icon: "💪", label: "Fiber", val: "34g / 100g" },
+      { icon: "⚙️", label: "Iron", val: "11.8 mg" },
+      { icon: "🦴", label: "Calcium", val: "632 mg" },
+      { icon: "🔋", label: "Magnesium", val: "259 mg" },
+      { icon: "🧬", label: "Eugenol", val: "High" },
     ],
-    tags: ["Bold Pods", "Premium Grade"],
+    tags: ["Bold Size", "High Oil"],
   },
-
+  {
+    id: "coriander",
+    name: "Coriander Seeds",
+    img: coriander,
+    origin: "India",
+    season: "Feb – Apr",
+    desc: "Aromatic seeds used as both spice and oilseed.",
+    nutrients: [
+      { icon: "💪", label: "Protein", val: "12g / 100g" },
+      { icon: "🌿", label: "Fiber", val: "41g / 100g" },
+      { icon: "⚙️", label: "Iron", val: "16 mg" },
+      { icon: "🦴", label: "Calcium", val: "709 mg" },
+      { icon: "🔋", label: "Magnesium", val: "330 mg" },
+      { icon: "🧬", label: "Vitamin C", val: "21 mg" },
+    ],
+    tags: ["Spice Grade", "Aromatic"],
+  },
+  {
+    id: "dry-ginger",
+    name: "Dry Ginger (Sonth)",
+    img: dryginger,
+    origin: "India",
+    season: "Dec – Feb",
+    desc: "Dried ginger roots with strong flavor and medicinal properties.",
+    nutrients: [
+      { icon: "💪", label: "Protein", val: "9g / 100g" },
+      { icon: "🌿", label: "Fiber", val: "14g / 100g" },
+      { icon: "⚙️", label: "Iron", val: "19 mg" },
+      { icon: "🦴", label: "Calcium", val: "114 mg" },
+      { icon: "🔋", label: "Potassium", val: "1320 mg" },
+      { icon: "🧬", label: "Gingerol", val: "High" },
+    ],
+    tags: ["Natural Dry", "Strong Aroma"],
+  },
+  {
+    id: "kasuri-methi",
+    name: "Fenugreek Leaves (Kasuri Methi)",
+    img: kasturimethi,
+    origin: "India (Rajasthan)",
+    season: "Jan – Mar",
+    desc: "Dried fenugreek leaves with a strong aroma used in Indian curries.",
+    nutrients: [
+      { icon: "💪", label: "Protein", val: "23g / 100g" },
+      { icon: "🌿", label: "Fiber", val: "25g / 100g" },
+      { icon: "⚙️", label: "Iron", val: "33 mg" },
+      { icon: "🦴", label: "Calcium", val: "176 mg" },
+      { icon: "🔋", label: "Potassium", val: "770 mg" },
+      { icon: "🧬", label: "Vitamin A", val: "High" },
+    ],
+    tags: ["Aromatic Leaves", "Premium Quality"],
+  },
+  {
+    id: "methi-dana",
+    name: "Fenugreek Seeds (Methi Dana)",
+    img: methidana,
+    origin: "India",
+    season: "Feb – Apr",
+    desc: "Golden fenugreek seeds known for their slightly bitter taste.",
+    nutrients: [
+      { icon: "💪", label: "Protein", val: "23g / 100g" },
+      { icon: "🌿", label: "Fiber", val: "24g / 100g" },
+      { icon: "⚙️", label: "Iron", val: "33 mg" },
+      { icon: "🦴", label: "Calcium", val: "176 mg" },
+      { icon: "🔋", label: "Magnesium", val: "191 mg" },
+      { icon: "🧬", label: "Saponins", val: "High" },
+    ],
+    tags: ["Sortex Clean", "Export Quality"],
+  },
   {
     id: "jaiphal",
     name: "Nutmeg (Jaiphal)",
@@ -1195,7 +1052,73 @@ const products = {
     ],
     tags: ["Whole Nut", "Aromatic"],
   },
-
+  {
+    id: "kalonji",
+    name: "Nigella Seeds (Kalonji)",
+    img: kalonji,
+    origin: "India / Middle East",
+    season: "Feb – Apr",
+    desc: "Black seeds with a slightly bitter taste used in breads and pickles.",
+    nutrients: [
+      { icon: "💪", label: "Protein", val: "20g / 100g" },
+      { icon: "🌿", label: "Fiber", val: "12g / 100g" },
+      { icon: "⚙️", label: "Iron", val: "10 mg" },
+      { icon: "🦴", label: "Calcium", val: "931 mg" },
+      { icon: "🔋", label: "Potassium", val: "1788 mg" },
+      { icon: "🧬", label: "Thymoquinone", val: "High" },
+    ],
+    tags: ["Natural Seeds", "Medicinal"],
+  },
+  {
+    id: "poppy-seeds",
+    name: "Poppy Seeds (Khus Khus)",
+    img: popyseeds,
+    origin: "India / Turkey",
+    season: "Mar – May",
+    desc: "Tiny white seeds with a nutty flavor used in bakery and dishes.",
+    nutrients: [
+      { icon: "💪", label: "Protein", val: "18g / 100g" },
+      { icon: "🌿", label: "Fiber", val: "20g / 100g" },
+      { icon: "⚙️", label: "Iron", val: "9.8 mg" },
+      { icon: "🦴", label: "Calcium", val: "1438 mg" },
+      { icon: "🔋", label: "Magnesium", val: "347 mg" },
+      { icon: "🧬", label: "Healthy Fats", val: "42g" },
+    ],
+    tags: ["White Seeds", "Bakery Grade"],
+  },
+  {
+    id: "star-anise",
+    name: "Star Anise (Chakra Phool)",
+    img: staranise,
+    origin: "Vietnam / India",
+    season: "Year Round",
+    desc: "Star-shaped spice with a strong licorice flavor.",
+    nutrients: [
+      { icon: "💪", label: "Fiber", val: "15g / 100g" },
+      { icon: "⚙️", label: "Iron", val: "37 mg" },
+      { icon: "🦴", label: "Calcium", val: "646 mg" },
+      { icon: "🔋", label: "Magnesium", val: "170 mg" },
+      { icon: "🧬", label: "Antioxidants", val: "High" },
+    ],
+    tags: ["Whole Star", "Premium Grade"],
+  },
+  {
+    id: "imli",
+    name: "Tamarind (Imli)",
+    img: tamarind,
+    origin: "India / Thailand",
+    season: "Mar – Jun",
+    desc: "Sweet and tangy pulp widely used in chutneys and sauces.",
+    nutrients: [
+      { icon: "💪", label: "Carbs", val: "63g" },
+      { icon: "🌿", label: "Fiber", val: "5g" },
+      { icon: "⚙️", label: "Iron", val: "2.8 mg" },
+      { icon: "🦴", label: "Calcium", val: "74 mg" },
+      { icon: "🔋", label: "Potassium", val: "628 mg" },
+      { icon: "🧬", label: "Vitamin B1", val: "0.4 mg" },
+    ],
+    tags: ["Seedless", "Natural Pulp"],
+  },
   {
     id: "haldi",
     name: "Turmeric (Haldi)",
@@ -1213,7 +1136,7 @@ const products = {
     ],
     tags: ["High Curcumin", "Export Quality"],
   },
-],
+]
 };
 
 const BASE = {

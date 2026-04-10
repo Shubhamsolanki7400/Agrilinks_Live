@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
+import '../styles/Banner.css'
 import phoneimage from "../assets/images/mobile1.png";
 const About = () => {
   const width = useWindowWidth();
@@ -77,7 +78,7 @@ const About = () => {
       ),
     },
     {
-      label: "Grade A Quality",
+      label: "A Grade Quality",
       sub: "Cleaned, sorted, and quality-tested stock.",
       svg: (
         <svg width="28" height="28" viewBox="0 0 28 28" fill="none">
@@ -194,6 +195,7 @@ const About = () => {
     },
   };
 
+
   return (
     <>
       <div
@@ -212,23 +214,22 @@ const About = () => {
           <div style={styles.textCol}>
             <h2 style={styles.heading}>About Us</h2>
             <p style={styles.desc}>
-              Mateshwari Agrilink Pvt Ltd is India’s first platform for trading agricultural
-              commodities. “Dalal Chanchaldas and Sons was established in 1976
-              by the late Shri Chanchaldas Hablani Ji. Now the Company has been
-              led by Dheeraj Hablani, For the past 20 years. The company now
-              serves about 700 clients in India, Primarily Grain and Pulse
-              Importers, Exporters, Millers, and Traders.
+              Mateshwari Agrilinks Pvt Ltd is India’s first platform for trading
+              agricultural commodities. “Dalal Chanchaldas and Sons was
+              established in 1976 by the late Shri Chanchaldas Hablani Ji. After
+              him, the business was run by Shri Chand Hablani Ji. Now the
+              Company has been led by Dheeraj Hablani for the past 20 years. The
+              company now serves about 700 clients in India, primarily Grain and
+              Pulse Importers, Exporters, Millers, and Traders.
             </p>
 
             <p style={styles.desc}>
-              Last Year Company
-              Launched New App Called “Agrilinks”.Which is India’s First
-              Platform for Trading Agriculture Commodities with Agrilinks,
-              Buyers & Sellers trade with Complete Transparency on the App,
-              Where prices Can be Easily Checked, this App offers Additional
-              Features that can be explored by Downloading it.
+              Last Year Company Launched New App Called “Agrilinks”.This is
+              India’s First Platform for Trading Agriculture Commodities with
+              Agrilinks, Buyers & Sellers trade with Complete Transparency on
+              the App, where prices can be easily checked. This app offers
+              Additional Features that can be explored by downloading it.
             </p>
-
           </div>
 
           {/* RIGHT IMAGE */}
@@ -251,7 +252,7 @@ const About = () => {
             What We<em>Offer</em>
           </h2>
         </div>
-        <div
+        <div 
           style={{
             maxWidth: 1100,
             margin: "0 auto",
@@ -259,10 +260,11 @@ const About = () => {
             gridTemplateColumns: "repeat(auto-fit, minmax(160px, 1fr))",
             gap: 24,
             textAlign: "center",
+          
           }}
         >
           {whyUs.map((w) => (
-            <div key={w.label}>
+            <div className="cardhover" style={{padding:"10px"}} key={w.label}>
               <div
                 style={{
                   display: "flex",

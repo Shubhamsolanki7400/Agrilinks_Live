@@ -85,7 +85,7 @@ const ContactDetail = () => {
         <div className="cg-info-card">
   <div className="cg-info-box">
     <h4>Contact Information</h4>
-    <p>Mateshwari Agrilink Pvt Ltd</p>
+    <p>Mateshwari Agrilinks Pvt Ltd</p>
 
     <div className="cg-info-item">
       <strong>Mobile:</strong>
@@ -125,7 +125,7 @@ const ContactDetail = () => {
         {/* MAP */}
         <div className="cg-map-section">
           <iframe
-            src="https://www.google.com/maps?q=204,+Bansiwala+Tower,+Sapna+Sangeeta+Road,+Indore&output=embed"
+            src="https://www.google.com/maps?q=204,+Bansiwala+Tower,+Above+Morni+Sarees,+Sapna+Sangeeta+Road,+Indore,+Madhya+Pradesh,+452001,+India&output=embed"
             width="100%"
             height="400"
             loading="lazy"

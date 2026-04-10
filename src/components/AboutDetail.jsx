@@ -192,6 +192,7 @@ const AboutDetail = () => {
             {/* LEFT IMAGE */}
             <div style={styles.imageCol}>
               <img
+                className="mobileabout"
                 src={phoneimage}
                 alt="Agrilinks App"
                 style={styles.image}

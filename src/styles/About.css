@@ -15,6 +15,7 @@
      height: 100% !important;
      top: unset !important;
   }
+ 
   .abt-section .abtsm-img{
     height: 100% !important;
     width: 100% !important;
@@ -742,6 +743,10 @@ footer {
   .hero h1{
     font-size: clamp(1.8rem, 7vw, 6rem);
     text-align: center;
+  }
+   .mobileabout{
+    width: 100%;
+    min-width: 200px !important;
   }
   .hero-tag{
     display: flex;
