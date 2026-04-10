@@ -99,7 +99,17 @@
     padding: 0 15px !important;
     top: 50% !important;
   }
-
+  .bannerh1{
+    font-size: 34px !important;
+  }
+  .bannerspan{
+    font-size:24px !important ;
+  }
+  .bannertpost{
+    left: 0% !important;
+    right: 0% !important;
+    text-align: center;
+  }
   .slide-text h1 {
     font-size: 28px !important;
     line-height: 1.1 !important;

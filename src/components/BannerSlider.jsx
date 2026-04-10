@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-
+import '../styles/Banner.css'
 import image1 from "../../src/assets/images/grainbeansbanner.jpeg";
 import image2 from "../../src/assets/images/greenmongbanner.jpeg";
 import image3 from "../../src/assets/images/whitecheakpeabanner.jpeg";
@@ -110,6 +110,7 @@ export default function BannerSlider() {
 
           {/* TEXT */}
           <div
+          className="bannertpost"
             style={{
               position: "absolute",
               top: "50%",
@@ -120,6 +121,7 @@ export default function BannerSlider() {
             }}
           >
             <h1
+            className="bannerh1"
               style={{
                 fontSize: "70px",
                 lineHeight: "1.1",
@@ -127,6 +129,7 @@ export default function BannerSlider() {
               }}
             >
               <span
+              className="bannerspan"
                 style={{
                   color: "#61ce70",
                   fontSize: "40px",
